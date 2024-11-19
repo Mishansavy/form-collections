@@ -1,0 +1,29 @@
+﻿body {
+    background-color: #000000;
+    color: #ffffff;
+}
+ a {
+     color:cornsilk;
+ }
+
+p {
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.heading {
+    font-weight: 500;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.wrapper {
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.wrapper.line {
+    border: 1px solid #808080;
+    border-width: 0px 0px 1px 0px;
+}
