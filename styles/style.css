@@ -27,3 +27,9 @@ p {
     border: 1px solid #808080;
     border-width: 0px 0px 1px 0px;
 }
+
+.wrapper.form {
+    text-align: center;
+    width: 100%;
+    padding: 50px 20px;
+}
