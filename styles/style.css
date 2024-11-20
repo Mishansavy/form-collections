@@ -1,35 +1,134 @@
-﻿body {
+﻿/* General Body Styling */
+body {
     background-color: #000000;
     color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
- a {
-     color:cornsilk;
- }
 
+/* Links */
+a {
+    color: cornsilk;
+}
+
+/* Paragraphs */
 p {
     color: #ffffff;
     font-size: 18px;
+    line-height: 1.6;
 }
 
+/* Headings */
 .heading {
     font-weight: 500;
     font-size: 30px;
     text-align: center;
     margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
+    .heading.title {
+        font-size: 24px;
+        font-weight: 600;
+        text-align: start;
+        padding: 0px 10px;
+        margin-bottom: 10px;
+    }
+
+/* Wrapper */
 .wrapper {
     text-align: center;
-    padding: 120px 20px;
-}
-
-.wrapper.line {
-    border: 1px solid #808080;
-    border-width: 0px 0px 1px 0px;
-}
-
-.wrapper.form {
-    text-align: center;
-    width: 100%;
     padding: 50px 20px;
+}
+
+    .wrapper.form {
+        width: 100%;
+        padding: 50px 20px;
+        border-radius: 10px;
+        margin: 0 auto 40px auto;
+        max-width: 1200px;
+    }
+
+.formdiv {
+    width: 100%;
+    margin: 0 auto 40px auto;
+    padding: 20px;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Input Fields */
+.inputfield {
+    width: 100%;
+    padding: 15px 10px;
+    margin: 10px 0;
+    border: 1px solid #666666;
+    border-radius: 5px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+    .inputfield::placeholder {
+        color: #999999;
+    }
+
+/* Dropdowns */
+.dropdown {
+    width: 100%;
+    padding: 15px 10px;
+    margin: 10px 0;
+    border: 1px solid #666666;
+    border-radius: 5px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+/* Buttons */
+.form input[type="submit"] {
+    width: 100%;
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin: 20px 0;
+    border-radius: 9px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    .form input[type="submit"]:hover {
+        background-color: darkblue;
+    }
+
+/* Feedback TextArea */
+.textarea {
+    width: 100%;
+    height: 100px;
+    padding: 15px;
+    border: 1px solid #666666;
+    border-radius: 5px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 16px;
+    resize: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .formdiv {
+        padding: 10px;
+    }
+
+    .inputfield,
+    .dropdown,
+    .form input[type="submit"] {
+        width: 100%;
+    }
 }
